@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulau Papua</title>
+    <link rel="stylesheet" href="ANJAY.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <a href="https://instagram.com/nabailll?igshid=YmMyMTA2M2Y">PAPUA | NABA'ILSAE WR</a>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="Home.html">Home</a></li>
+		<li><a href="Sejarah.html">Sejarah</a></li>
+        <li><a href="Geografis.html">Geografis</a></li>
+        <li><a href="Latar belakang.html">Penjelasan</a></li>
+        <li><a href="About Us.html">About Us</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  <div class="banner"></div>
+  <div class="about">
+    <div class="content">
+	<center><img src="https://www.papuapos.com/wp-content/uploads/2021/11/1314607132833093062.jpg" width="800"></center>
+	<a href="https://www.papuapos.com/wp-content/uploads/2021/11/1314607132833093062.jpg">Source Image : https://www.papuapos.com </a>
+	<br>
+	<br>
+      <div class="title"><h2>Sejarah Pulau Papua</h2></div>
+      <p>   <font size="5">Asal-usul nama Papua memiliki perjalanan yang panjang seiring dengan interaksi antara bangsa asing dengan masyarakat Papua.  Pada masa pemerintahan kolonial Hindia Belanda, wilayah ini disebut sebagai Nugini Belanda atau Nederlands Nieuw-Guinea atau Dutch New Guinea.  Selama Revolusi Indonesia berlangsung, Belanda sudah melancarkan aksi polisi untuk mengambil wilayah Papua dari Republik Indonesia.  
+	  <br>Alasan Belanda menjajah Papua, karena Papua kaya akan hasil bumi.  Namun, meskipun Belanda menjajah Papua, Belanda tetap ingin memerdekakan Papua, karena Belanda telah melakukan investasi besar di bidang keuangan dan ilmu pengetahuan sejak awal abad 19.  Sayangnya, niatan Belanda ini juga diinginkan oleh Indonesia, di mana Indonesia ingin Papua bergabung dalam Negara Kesatuan Republik Indonesia.  Akhirnya, pada 27 Desember 1949, diselenggarakan Konferensi Meja Bundar. 
+	  <br> Melalui konferensi tersebut, Belanda secara resmi menyerahkan kedaulatan dari Belanda kepada Indonesia.  Kemudian, tahun 1963, setelah bergabung dengan Negara Kesatuan Republik Indonesia (NKRI), wilayah ini disebut sebagai Provinsi Irian Barat sejak hingga 1973.  Namanya kemudian diganti menjadi Irian Jaya oleh Soeharto sewaktu meresmikan tambang tembaga dan emas freeport.  
+	  <br>Nama Irian Jaya terus digunakan secara resmi sampai terbitnya Undang-Undang Nomor 21 Tahun 2001 tentang Otonomi Khusus Papua. Berdasarkan UU No. 21 Tahun 2001, diamanatkan nama provinsi Irian Jaya diganti menjadi Papua.
+	  <br> Masuk tahun 2003, muncul berbagai protes mengenai penggabungan Papua Tengah dan Papua Timur.  Akibatnya, Papua dibagi menjadi dua provinsi oleh pemerintah Indonesia, di mana bagian Timur tetap memakai nama Papua, sedangkan bagian Barat menjadi Provinsi Irian Jaya Barat (Papua Barat).</p>
+	  	  <br>
+	  <p><center><a href="Geografis.html" class="tbl-pink">Geografis Page</a></center></p>
+	  	  <br>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+    </div>
+  </div>
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+
+</body>
+</html>

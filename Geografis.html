@@ -1,0 +1,100 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulau Papua</title>
+    <link rel="stylesheet" href="ANJAY.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <a href="https://instagram.com/nabailll?igshid=YmMyMTA2M2Y=">PAPUA | NABA'ILSAE WR</a>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="Home.html">Home</a></li>
+		<li><a href="Sejarah.html">Sejarah</a></li>
+        <li><a href="Geografis.html">Geografis</a></li>
+        <li><a href="Latar belakang.html">Penjelasan</a></li>
+        <li><a href="About Us.html">About Us</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  <div class="banner"></div>
+  <div class="about">
+    <div class="content">
+<center>	<img src="http://beautiful-indonesia.umm.ac.id/files/image/peta/papua.png" alt="PAPUA" width="800"></center>
+	<a href="http://beautiful-indonesia.umm.ac.id/files/image/peta/papua.png">Source Image : http://beautiful-indonesia.umm.ac.id</a>
+	<br>
+	<br>
+      <div class="title"><h2>Kondisi Geografis Pulau Papua</h2></div>
+     <div>
+      <font size="5">berikut kondisi geografis pulau Papua
+      <br><br>
+<h3>1. Letak astronomis Pulau Papua</h3>
+                  <font size="5">Secara astronomis, Pulau Papua terletak di posisi 0º 20' Lintang Selatan (LS) sampai 10º 42' LS dan membentang dari 131º Bujur Timur (BT) hingga 151º BT.
+            <br><br>
+<h3>2. Luas Pulau Papua</h3>
+                  <font size="5">Pulau Papua yang memiliki luas 785,753 km2 ini didiami ratusan suku bangsa. Pulau ini juga terkenal dengan hutan hujan tropis yang menjadi rumah bagi puluhan ribu jenis flora dan ratusan tumbuhan endemik. Selain itu beragam hewan eksotis juga bisa dijumpai di pulau ini antara lain burung cendrawasih, kasuari, Kuskus scham-scham, dingiso, dan labi-labi moncong babi.
+            <br><br>
+<h3>3. Batas Laut Pulau Papua</h3>
+             <font size="5">Sebelah timur : Laut Seram dan Laut Halmahera
+<br>Sebelah utara : Samudra Pasifik
+<br>Sebelah barat : Laut Solomon dan Laut Bismarck
+<br>Sebelah selatan : Laut Arafura dan Laut Coral
+      <br><br>
+<h3>4.Gunung di Pulau Papua</h3>
+             <font size="5">Pulau Papua memiliki gunung tertinggi di Asia Tenggara bernama Puncak Jaya dengan ketinggian sekitar 4.884 meter. Selain itu terdapat gunung-gunung lain seperti:
+<br>- Puncak Mandala
+<br>- Puncak Trikora
+<br>- Puncak Ngga Pilimsit
+<br>- Puncak Yamin
+<br>- Gunung Ulawun
+<br>- Gunung Karewa
+<br>- Gunung Koranga
+ <br>- Gunung Yelia
+       <br><br>
+<h3>5.Sungai di Pulau Papua</h3>
+             <font size="5">Sejumlah sungai di Pulau Papua memiliki panjang lebih dari 1.100 km seperti Sungai Sepik dan Sungai Fly di Papua Nugini. Artinya panjang sungai tersebut hampir sama dengan jarak antara Pelabuhan Merak, Banten di barat Pulau Jawa sampai ke Pelabuhan Ketapang, Jawa Timur di ujung timur Pulau Jawa. Kondisi geografis Pulau Papua berdasarkan peta dengan kontur beragam mulai dari pegunungan, lembah, hutan, rawa sampai pantai dilewati sungai-sungai panjang tersebut. Beberapa sungai lainnya diantaranya:
+<br>-Sungai Mamberamo
+<br>-Sungai Digul
+<br>-Sungai Purari
+<br>-Sungai Baliem
+<br>-Sungai Keerom
+	  <br>
+	  <br>
+	  <p><center><a href="Latar belakang.html" class="tbl-pink">Latar belakang Page</a></center></p>
+	  <br>
+	  	  <br>
+    </div>
+  </div>
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+
+</body>
+</html>
